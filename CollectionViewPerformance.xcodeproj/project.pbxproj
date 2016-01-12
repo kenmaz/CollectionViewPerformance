@@ -13,6 +13,11 @@
 		5E65DE8D1C44B7B20057AD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DE8B1C44B7B20057AD58 /* Main.storyboard */; };
 		5E65DE8F1C44B7B20057AD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DE8E1C44B7B20057AD58 /* Assets.xcassets */; };
 		5E65DE921C44B7B20057AD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DE901C44B7B20057AD58 /* LaunchScreen.storyboard */; };
+		5E65DE9A1C44B87D0057AD58 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DE991C44B87D0057AD58 /* grid.png */; };
+		5E65DE9C1C44BA100057AD58 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65DE9B1C44BA100057AD58 /* MyCell.swift */; };
+		5E65DE9E1C44BF260057AD58 /* AutoResizing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DE9D1C44BF260057AD58 /* AutoResizing.storyboard */; };
+		5E65DEA01C44C1360057AD58 /* MyDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65DE9F1C44C1360057AD58 /* MyDatasource.swift */; };
+		5E65DEA21C44C33A0057AD58 /* grid2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E65DEA11C44C33A0057AD58 /* grid2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5E65DE8E1C44B7B20057AD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E65DE911C44B7B20057AD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E65DE931C44B7B20057AD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E65DE991C44B87D0057AD58 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		5E65DE9B1C44BA100057AD58 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		5E65DE9D1C44BF260057AD58 /* AutoResizing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutoResizing.storyboard; sourceTree = "<group>"; };
+		5E65DE9F1C44C1360057AD58 /* MyDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatasource.swift; sourceTree = "<group>"; };
+		5E65DEA11C44C33A0057AD58 /* grid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,14 @@
 			children = (
 				5E65DE851C44B7B20057AD58 /* AppDelegate.swift */,
 				5E65DE871C44B7B20057AD58 /* FirstViewController.swift */,
+				5E65DE9F1C44C1360057AD58 /* MyDatasource.swift */,
+				5E65DE9B1C44BA100057AD58 /* MyCell.swift */,
 				5E65DE891C44B7B20057AD58 /* SecondViewController.swift */,
 				5E65DE8B1C44B7B20057AD58 /* Main.storyboard */,
+				5E65DE9D1C44BF260057AD58 /* AutoResizing.storyboard */,
 				5E65DE8E1C44B7B20057AD58 /* Assets.xcassets */,
+				5E65DE991C44B87D0057AD58 /* grid.png */,
+				5E65DEA11C44C33A0057AD58 /* grid2.png */,
 				5E65DE901C44B7B20057AD58 /* LaunchScreen.storyboard */,
 				5E65DE931C44B7B20057AD58 /* Info.plist */,
 			);
@@ -125,7 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E65DEA21C44C33A0057AD58 /* grid2.png in Resources */,
+				5E65DE9E1C44BF260057AD58 /* AutoResizing.storyboard in Resources */,
 				5E65DE921C44B7B20057AD58 /* LaunchScreen.storyboard in Resources */,
+				5E65DE9A1C44B87D0057AD58 /* grid.png in Resources */,
 				5E65DE8F1C44B7B20057AD58 /* Assets.xcassets in Resources */,
 				5E65DE8D1C44B7B20057AD58 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E65DE8A1C44B7B20057AD58 /* SecondViewController.swift in Sources */,
+				5E65DE9C1C44BA100057AD58 /* MyCell.swift in Sources */,
 				5E65DE861C44B7B20057AD58 /* AppDelegate.swift in Sources */,
 				5E65DE881C44B7B20057AD58 /* FirstViewController.swift in Sources */,
+				5E65DEA01C44C1360057AD58 /* MyDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +274,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectionViewPerformance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kenmaz.CollectionViewPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -265,9 +287,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectionViewPerformance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.kenmaz.CollectionViewPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

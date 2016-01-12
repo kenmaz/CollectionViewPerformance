@@ -10,16 +10,17 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    private var datasource = MyDatasource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        collectionView.dataSource = datasource
+        
+        tabBarItem.image = UIImage(named: "second")
+        tabBarItem.title = "AutoResizing"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
+    
